@@ -40,7 +40,7 @@ class AppHeader(UserControl):
                         color="#FFFFFF",
                         hint_text="Search...",
                         hint_style=TextStyle(color="white"),
-                        #on_change=lambda e: self.filter_data_table(e),
+                        on_change=lambda e: self.filter_data_table(e),
                     ),
                 ],
             ),
@@ -57,6 +57,19 @@ class AppHeader(UserControl):
             self.controls[0].content.controls[1].content.controls[1].value = ""
             self.controls[0].content.controls[1].opacity = 0
             self.controls[0].content.controls[1].update()
+
+    def filter_data_table(self, e):
+        for key, value in control_map.items():
+            if key == 'AppDataTable':
+                if len(value.controls[0].controls[0].rows) != 0:
+                    for data in value.controls[0].controls[0].rows[:]:
+                        if e.data in data.cells[0].content.controls[0].value.lower():
+                            data.visible=True
+                            data.update()
+                        else:
+                            data.visible=False
+                            data.update()
+
 
     def build(self):
         self.app_header_instance()
