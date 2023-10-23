@@ -60,7 +60,7 @@ def return_form_button():
                         size=12,
                     ),
                     Text(
-                        "Add Input field to table",
+                        "Agregar Registro",
                         size=11,
                         weight="bold",
                     ),

@@ -24,16 +24,31 @@ class AppDataTable(UserControl):
                     #the column args will set the number of columns to be displayed
                     columns=[
                         DataColumn(
-                            Text("Column One", size=12, color="black", weight="bold")
+                            Text("Cod Auxiliar", size=12, color="black", weight="bold")
                         ),
                         DataColumn(
-                            Text("Column Two", size=12, color="black", weight="bold")
+                            Text("ISIN", size=12, color="black", weight="bold")
                         ),
                         DataColumn(
-                            Text("Column Three", size=12, color="black", weight="bold")
+                            Text("Descripcion", size=12, color="black", weight="bold")
                         ),
                         DataColumn(
-                            Text("Column Four", size=12, color="black", weight="bold")
+                            Text("ID Valor", size=12, color="black", weight="bold")
+                        ),
+                        DataColumn(
+                            Text("Symbol", size=12, color="black", weight="bold")
+                        ),
+                        DataColumn(
+                            Text("Pais", size=12, color="black", weight="bold")
+                        ),
+                        DataColumn(
+                            Text("Desc 2", size=12, color="black", weight="bold")
+                        ),
+                        DataColumn(
+                            Text("Tipo Movimiento", size=12, color="black", weight="bold")
+                        ),
+                        DataColumn(
+                            Text("Valor Cierre", size=12, color="black", weight="bold")
                         ),
                     ],
                     #here is the configuration of the form to append the data into the rows
