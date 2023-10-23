@@ -15,7 +15,7 @@ class AppHeader(UserControl):
         add_to_control_reference("AppHeader", self)
 
     def app_header_brand(self):
-        return Container(content=Text("Line Indent", size=15, color="#FFFFFF"))
+        return Container(content=Text("Afisca", size=15, color="#FFFFFF"))
     
     def app_header_search(self):
         return Container(

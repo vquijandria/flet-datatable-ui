@@ -50,12 +50,19 @@ class AppForm(UserControl):
                 expand=True,
                 controls=[
                     Row(
-                        controls=[self.app_form_input_field("Field *", True)],
+                        controls=[self.app_form_input_field("Cod Auxiliar", True),
+                                  self.app_form_input_field("ISIN*", 3),
+                                  self.app_form_input_field("Descripcion", 2),
+                                  ],
                     ),
                     Row(
-                        controls=[self.app_form_input_field("Field One*", 3),
-                                  self.app_form_input_field("Field Two*", 1),
-                                  self.app_form_input_field("Field Three*", 1),
+                        controls=[
+                                  self.app_form_input_field("ID Valor", 1),
+                                  self.app_form_input_field("Symbol", 1),
+                                  self.app_form_input_field("Pais", 1),
+                                  self.app_form_input_field("Desc 2", 1),
+                                  self.app_form_input_field("Tipo Movimiento", 1),
+                                  self.app_form_input_field("Valor Cierre", 1),
                         ],
                     ),
                     Divider(height=1, color="transparent"),
